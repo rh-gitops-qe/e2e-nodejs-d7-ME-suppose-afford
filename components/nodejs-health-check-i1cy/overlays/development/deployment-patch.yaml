@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-i1cy
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh-gitops-bot/rhtap-demo-lzyj-tenant/e2e-nodejs/nodejs-health-check-i1cy@sha256:657018f0a5c94c1d9fbe5ea46c8ac26d57b4a9ee3c28043d3a11af90aec53bf4
+        name: my-nodejs
+        resources: {}
+status: {}
